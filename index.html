@@ -7,11 +7,27 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+    <div class="alert" id="alert"></div>
     <form action="#" method="post">
         <div class="container">
             <label for="username"> Username:</label>
-            <input type="text" name="" id="">
+            <input type="text" name="username" id="username">
         </div>
+        <div class="container">
+            <label for="password"> Password:</label>
+            <input type="text" name="password" id="password">
+        </div>
+        <div class="captchaContainer">
+            <div class="captcha" id="captcha"></div>
+            <button class="refresh" id="refresh">
+                <img src="./images/refresh.svg" alt="refresh">
+            </button>
+        </div>
+        <div class="container">
+            <label for="captcha">captcha:</label>
+            <input type="text" name="captcha " id="captchaInput" maxlength="4">
+        </div>
+        <input type="submit" value="login" id="loginBtn" >
     </form>
     <script src="./js/main.js"></script>
 </body>

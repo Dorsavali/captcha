@@ -1,4 +1,110 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+}
+form {
+  width: 40%;
+  background-color: #c0c0c0;
+  margin:10px auto 100px auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  .container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    label {
+      color: rgb(0, 0, 0);
+      font-family: sans-serif;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    input {
+      padding: 10px;
+      box-sizing: border-box;
+      transition: 500ms;
+      outline: unset;
+      border-radius: 16px;
+      border: unset;
+      &:hover {
+        transform: scale(1.2);
+        outline: unset;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+    }
+  }
+  button {
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background-color: rgb(208, 208, 208);
+    color: #ffffff;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: 500ms;
+    font-family:sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    &:hover {
+      transform: scale(0.8);
+    }
+  }
+  input[type="submit"] {
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: 500ms;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    &:hover {
+      transform: scale(0.8);
+    }
+  }
+  .captchaContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    gap: 20px;
+
+    .captcha{
+      width: 100px;
+      height: 50px;
+      background-color: rgb(247, 247, 247);
+      border-radius: 16px;
+      color: #000000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      user-select: none;
+    }
+  }
+}
+.alert{
+  width: 40%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: crimson;
+  color: white;
+  border-radius: 10px;
+  margin:10px auto 0 auto;
+  text-align: center;
+  display: none;
+  &.active{
+    display: block !important;
+  }
+  
 }
