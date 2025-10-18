@@ -5,7 +5,7 @@
 form {
   width: 40%;
   background-color: #c0c0c0;
-  margin:10px auto 100px auto;
+  margin: 10px auto 100px auto;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
